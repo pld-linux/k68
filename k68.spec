@@ -2,7 +2,7 @@ Summary:	Communication software for t68i phone
 Summary(pl):	Oprogramowanie komunikacyjne dla telefonu t68i
 Name:		k68
 Version:	0.2.1
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/k68/%{name}-%{version}.tar.bz2
