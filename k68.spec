@@ -55,7 +55,7 @@ install -d $RPM_BUILD_ROOT%{_desktopdir}
 %find_lang %{name} --with-kde
 
 mv   $RPM_BUILD_ROOT{%{_datadir}/applnk/Utilities,%{_desktopdir}}/k68.desktop
-echo "Qt;KDE;Office;PDA;" >> $RPM_BUILD_ROOT%{_desktopdir}/k68.desktop
+echo "Categories=Qt;KDE;Office;PDA;" >> $RPM_BUILD_ROOT%{_desktopdir}/k68.desktop
 
 %clean
 rm -rf $RPM_BUILD_ROOT
