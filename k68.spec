@@ -1,5 +1,5 @@
 Summary:	Communication software for t68i phone
-Summary(pl):	Oprogramowanie komunikacyjne dla telefon t68i
+Summary(pl):	Oprogramowanie komunikacyjne dla telefonu t68i
 Name:		k68
 Version:	0.2
 Release:	0.1
@@ -11,21 +11,21 @@ Source0:	http://dl.sourceforge.net/sourceforge/k68/%{name}-%{version}.tar.bz2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-empty
+Oprogramowanie komunikacyjne dla telefonu t68i.
 
 %prep
 %setup -q
 
 %build
-rm -f missing
-%configure2_13
+%configure
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-#install -d $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT \
+	kde_appsdir=%{_applnkdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
