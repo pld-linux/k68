@@ -13,6 +13,7 @@ URL:		http://k68.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	kdelibs-devel >= 9:3.2.0
+BuildRequires:	rpmbuild(macros) >= 1.129
 BuildRequires:	unsermake >= 040805
 BuildRequires:	bluez-libs-devel
 BuildRequires:	libart_lgpl-devel
@@ -34,8 +35,8 @@ Ericsson(R) T68i oraz T68.
 # be permissive - BDADDR_ANY from <bluetooth/bluetooth.h> used in k68.cpp
 # is a compound statement, which ISO C++ forbids
 CXXFLAGS="%{rpmcflags} -fpermissive"
-cp -f %{_datadir}/automake/config.sub admin
-export UNSERMAKE=%{_datadir}/unsermake/unsermake
+cp -f /usr/share/automake/config.sub admin
+export UNSERMAKE=/usr/share/unsermake/unsermake
 %{__make} -f admin/Makefile.common cvs
 
 %configure \
