@@ -8,7 +8,7 @@ Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/k68/%{name}-%{version}.tar.bz2
 # Source0-md5:	82d1306995bc8b10922108e17127a708
 Source1:	http://ep09.pld-linux.org/~djurban/kde/kde-common-admin.tar.bz2
-# Source1-md5:  81e0b2f79ef76218381270960ac0f55f
+# Source1-md5:	81e0b2f79ef76218381270960ac0f55f
 URL:		http://k68.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
