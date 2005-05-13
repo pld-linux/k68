@@ -1,0 +1,14 @@
+--- k68-0.2.1/k68/k68.desktop.	2005-05-13 10:04:06.000000000 +0200
++++ k68-0.2.1/k68/k68.desktop	2005-05-13 10:06:28.000000000 +0200
+@@ -5,7 +5,8 @@
+ Exec=k68 -caption "%c" %i %m  
+ Icon=k68.png
+ DocPath=k68/index.html
+-Comment=
+-Terminal=0
++Comment=Sony Ericsson T68(i) mobile phone communication tool
++Comment[pl]=Narzędzie komunikacyjne do telefonów Sony Ericsson T68(i)
++Terminal=false
+ Name=K68
+-MimeType=audio/amr;audio/imelody;application/vnd.eri.thm;text/x-emelody;text/x-vmel;image/jpeg;image-gif;text/x-vcalendar
++MimeType=audio/amr;audio/imelody;application/vnd.eri.thm;text/x-emelody;text/x-vmel;image/jpeg;image/gif;text/x-vcalendar
