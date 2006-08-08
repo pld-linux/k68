@@ -31,7 +31,7 @@ Ericsson(R) T68i oraz T68.
 
 %prep
 %setup -q -a1
-%patch -p1
+%patch0 -p1
 
 %build
 # be permissive - BDADDR_ANY from <bluetooth/bluetooth.h> used in k68.cpp
