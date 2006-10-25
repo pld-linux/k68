@@ -2,7 +2,7 @@ Summary:	Communication software for t68i phone
 Summary(pl):	Oprogramowanie komunikacyjne dla telefonu t68i
 Name:		k68
 Version:	0.2.1
-Release:	3
+Release:	4
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/k68/%{name}-%{version}.tar.bz2
@@ -10,6 +10,7 @@ Source0:	http://dl.sourceforge.net/k68/%{name}-%{version}.tar.bz2
 Source1:	http://ep09.pld-linux.org/~djurban/kde/kde-common-admin.tar.bz2
 # Source1-md5:	81e0b2f79ef76218381270960ac0f55f
 Patch0:		%{name}-desktop.patch
+Patch1:		%{name}-openobex-pkgconfig.patch
 URL:		http://k68.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -32,6 +33,7 @@ Ericsson(R) T68i oraz T68.
 %prep
 %setup -q -a1
 %patch0 -p1
+%patch1 -p1
 
 %build
 # be permissive - BDADDR_ANY from <bluetooth/bluetooth.h> used in k68.cpp
