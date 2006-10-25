@@ -14,12 +14,12 @@ Patch1:		%{name}-openobex-pkgconfig.patch
 URL:		http://k68.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	kdelibs-devel >= 9:3.2.0
-BuildRequires:	rpmbuild(macros) >= 1.129
-BuildRequires:	unsermake >= 040805
 BuildRequires:	bluez-libs-devel
+BuildRequires:	kdelibs-devel >= 9:3.2.0
 BuildRequires:	libart_lgpl-devel
 BuildRequires:	openobex-devel
+BuildRequires:	rpmbuild(macros) >= 1.129
+BuildRequires:	unsermake >= 040805
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
