@@ -1,5 +1,5 @@
 Summary:	Communication software for t68i phone
-Summary(pl):	Oprogramowanie komunikacyjne dla telefonu t68i
+Summary(pl.UTF-8):   Oprogramowanie komunikacyjne dla telefonu t68i
 Name:		k68
 Version:	0.2.1
 Release:	5
@@ -27,8 +27,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 K68 is a tool for communicating with a Sony Ericsson(R) T68i or T68
 mobile phone.
 
-%description -l pl
-K68 to narzêdzie do komunikacji z telefonami komórkowymi Sony
+%description -l pl.UTF-8
+K68 to narzÄ™dzie do komunikacji z telefonami komÃ³rkowymi Sony
 Ericsson(R) T68i oraz T68.
 
 %prep
