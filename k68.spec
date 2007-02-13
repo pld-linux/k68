@@ -1,5 +1,5 @@
 Summary:	Communication software for t68i phone
-Summary(pl.UTF-8):   Oprogramowanie komunikacyjne dla telefonu t68i
+Summary(pl.UTF-8):	Oprogramowanie komunikacyjne dla telefonu t68i
 Name:		k68
 Version:	0.2.1
 Release:	5
